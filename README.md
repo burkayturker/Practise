@@ -1,0 +1,2 @@
+# Pratikler
+Pratik Yapılan Programlar
