@@ -1,0 +1,22 @@
+package Giris;
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+       double paradegeri, kdvsizfiyat, kdvlifiyat,kdvorani, kdvtutari;
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Para Değerini Giriniz :");
+        paradegeri = input.nextDouble();
+        
+        kdvorani = (paradegeri>0) && (paradegeri <=1000) ? 0.18 : 0.8;
+        System.out.println("Kdv Oranı :" +kdvorani);
+        kdvsizfiyat = paradegeri;
+        System.out.println("KDV'siz Fiyat :" + kdvsizfiyat);
+        kdvlifiyat = ((paradegeri*kdvorani)+paradegeri);
+        System.out.println("KDV'li Fiyat :" + kdvlifiyat);
+        kdvtutari = (paradegeri*kdvorani);
+        System.out.println("KDV Tutarı :" +kdvtutari);
+    }
+}
