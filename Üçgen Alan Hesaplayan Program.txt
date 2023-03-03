@@ -1,0 +1,23 @@
+package Giris;
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        double a, b, c, u, Alan, Cevre;
+        Scanner input = new Scanner(System.in);
+
+        //Kenar uzunluklarını al
+        System.out.println("a kenarının uzunluğunu giriniz :");
+        a = input.nextDouble();
+        System.out.println("b kenarının uzunluğunu giriniz :");
+        b = input.nextDouble();
+        System.out.println("c kenarının uzunluğunu giriniz :");
+        c = input.nextDouble();
+
+        //Üçgen çevresini hesapla
+        u = (a+b+c) / 2;
+        Cevre = 2*u;
+        System.out.println("Üçgenin Çevresi :"+ Cevre);
+        Alan = Math.sqrt(u*(u-a)*(u-b)*(u-c));
+        System.out.println("Üçgenin Alanı :" + Alan);
