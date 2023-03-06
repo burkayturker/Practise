@@ -1,0 +1,20 @@
+package Giris;
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        int r;
+        double a, dilimalani;
+        double pi = 3.14;
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Dairenin r değerini giriniz :");
+        r= input.nextInt();
+        System.out.println("a açısını giriniz :");
+        a = input.nextDouble();
+        dilimalani = (pi*(r*r)*a)/360;
+        System.out.println("Daire Diliminin Alanı :" +dilimalani);
+    }
+}
